@@ -40,33 +40,45 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
 
     .dog-card {
       background: #fff;
-      border-radius: 10px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
 
-    .dog-card img { width: 100%; height: 200px; object-fit: cover; }
+    .dog-card:hover {
+      transform: translateY(-4px);
+    }
 
-    .dog-card .info { padding: 15px; }
+    .dog-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
+      background-color: #eee;
+    }
 
-    .dog-card strong { display: block; margin-bottom: 5px; }
+    .dog-card .info { padding: 18px; }
+
+    .dog-card strong { display: block; margin-bottom: 6px; }
 
     .dog-card button {
-      margin-top: 10px;
+      margin-top: 12px;
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       background: #1e88e5;
       color: #fff;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 0.95rem;
     }
 
     .dog-card button:hover { background: #1565c0; }
@@ -76,6 +88,9 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
+    }
+  </style>    padding: 20px;
       margin-top: 40px;
     }
   </style>
@@ -108,8 +123,8 @@
     <div class="dog-card">
       <img src="imagens/cachorro1.png" alt="Cachorro abandonado">
       <div class="info">
-        <strong>Localização:</strong> Bairro Centro – Criciúma
-        <strong>Condição:</strong> Magro e assustado
+        <strong>Localização:</strong> Bairro Argentina – Criciúma
+        <strong>Condição:</strong> Novinha e assustada
         <a href="https://wa.me/5548996341797" target="_blank"><button>Quero ajudar</button></a>
       </div>
     </div>
@@ -132,4 +147,3 @@
 
 </body>
 </html>
-
