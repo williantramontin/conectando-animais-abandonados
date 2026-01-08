@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conectando Animais Abandonados</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #f4f6f8; color: #333; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+    }
 
     header {
       background: #1e88e5;
@@ -16,10 +27,22 @@
       text-align: center;
     }
 
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.1rem; max-width: 700px; margin: auto; }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
     .steps {
       display: grid;
@@ -36,7 +59,10 @@
       text-align: center;
     }
 
-    .card h3 { margin-bottom: 10px; color: #1e88e5; }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1e88e5;
+    }
 
     .gallery {
       display: grid;
@@ -50,24 +76,17 @@
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .dog-card:hover {
-      transform: translateY(-4px);
     }
 
     .dog-card img {
       width: 100%;
       height: 260px;
       object-fit: cover;
-      object-position: center;
-      background-color: #eee;
     }
 
-    .dog-card .info { padding: 18px; }
-
-    .dog-card strong { display: block; margin-bottom: 6px; }
+    .dog-card .info {
+      padding: 18px;
+    }
 
     .dog-card button {
       margin-top: 12px;
@@ -78,10 +97,7 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 0.95rem;
     }
-
-    .dog-card button:hover { background: #1565c0; }
 
     footer {
       background: #1e88e5;
@@ -92,46 +108,47 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Conectando Animais Abandonados</h1>
-  <p>Ajude a mapear cães e gatos abandonados em Criciúma. Registre, compartilhe a localização e conecte pessoas dispostas a resgatar e adotar.</p>
+  <p>Projeto comunitário para ajudar no resgate e adoção responsável de animais em Criciúma.</p>
 </header>
 
 <section>
   <h2>Como funciona</h2>
   <div class="steps">
-    <div class="card"><h3>Identificação</h3><p>Moradores identificam animais abandonados nas ruas.</p></div>
-    <div class="card"><h3>Registro</h3><p>Foto e localização são cadastradas no aplicativo.</p></div>
-    <div class="card"><h3>Divulgação</h3><p>Os animais ficam visíveis para a comunidade.</p></div>
-    <div class="card"><h3>Resgate</h3><p>Pessoas responsáveis entram em contato para ajudar.</p></div>
+    <div class="card"><h3>Identificação</h3><p>Animais são identificados nas ruas.</p></div>
+    <div class="card"><h3>Cadastro</h3><p>Fotos são enviadas via WhatsApp.</p></div>
+    <div class="card"><h3>Divulgação</h3><p>Animais aparecem no site.</p></div>
+    <div class="card"><h3>Resgate</h3><p>Pessoas entram em contato.</p></div>
   </div>
 </section>
 
-
-
 <section>
   <h2>Animais que precisam de ajuda</h2>
-<p style="margin-top:10px">📸 Para cadastrar um animal abandonado, envie a foto e a localização diretamente pelo WhatsApp.</p>
-<a href="https://wa.me/5548996341797" target="_blank" style="display:inline-block;margin-top:15px;padding:12px 20px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-weight:600">Cadastrar animal pelo WhatsApp</a>
+
+  <a href="https://wa.me/5548996341797" target="_blank"
+     style="display:inline-block;margin-top:15px;padding:12px 20px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;">
+     Cadastrar animal pelo WhatsApp
+  </a>
+
   <div class="gallery">
 
     <div class="dog-card">
-      <img src="imagens/cachorro1.jpg" alt="Cachorro abandonado">
+      <img src="imagens/cachorro.png">
       <div class="info">
-        <strong>Localização:</strong> Bairro Centro – Criciúma
-        <strong>Condição:</strong> Magro e assustado
-        <a href="https://wa.me/5548996341797" target="_blank"><button>Quero ajudar</button></a>
+        <strong>Localização:</strong> Bairro Argentina – Criciúma
+        <button onclick="window.open('https://wa.me/5548996341797')">Quero ajudar</button>
       </div>
     </div>
 
     <div class="dog-card">
-      <img src="imagens/cachorro2.jpg" alt="Cachorro abandonado">
+      <img src="imagens/cachorro2.png">
       <div class="info">
         <strong>Localização:</strong> Bairro Próspera – Criciúma
-        <strong>Condição:</strong> Ferimento na pata
-        <a href="https://wa.me/5548996341797" target="_blank"><button>Quero ajudar</button></a>
+        <button onclick="window.open('https://wa.me/5548996341797')">Quero ajudar</button>
       </div>
     </div>
 
@@ -139,7 +156,7 @@
 </section>
 
 <footer>
-  <p>Projeto Extensionista – Conectando Animais Abandonados © 2026</p>
+  Projeto Extensionista – Conectando Animais Abandonados © 2026
 </footer>
 
 </body>
